@@ -93,21 +93,6 @@ git clone {git repo}
 ``` bash
 code .
 ```
-* This will open the directory in your default code editor and from there it is required that you open the index.html file from live server (Visual Studio Code) or your code editors counterpart. You <strong>must</strong> use this method. Opening this web app from the index.html file alone will cause it to not function correctly!
-
-<p 
-  style="
-    font-size: 12px; 
-    background-color: #8c8c8c; 
-    border-radius: 2px; 
-    padding: 1px 5px; 
-    text-align: center; 
-    color: white; 
-    margin-bottom: 24px"
->
-  <span style="font-weight: 700; color: purple">Live Server</span>
-  <img src="img/README/liveServer.PNG">
-</p>
 
 
 ## Addition comments:
