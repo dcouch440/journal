@@ -1,7 +1,8 @@
 # {Project Name}
+#### *Co-Created By: David Couch*
 #### *Co-Created By:*
-#### *Co-Created By:*
-#### *{Brief Project Description}*
+#### **
+
 <!-- Check list
 - Project Name
 - Author
@@ -13,14 +14,31 @@
 - git clone repo link
 - date
  -->
+
 * * *
 
 ## Description  
-{project description}
+This is an app to take two inputs from a user and stores them in an object using js constructor's.
 
 * * *
 ## Specs
+```js
+  Describe: Entry()
+  Test: 'It will create an object from two user inputs on submit'
+  Expect: new Entry('The Dog Walk', 'One day the dog ran...').toEqual({title: 'The Dog Walk', body: 'One day the dog ran...'})
 
+  Describe: Entry.prototype.getWordCount()
+  Test: 'It will convert our body string into a value that shows the count of words'
+  Expect: story.getWordCount().toEqual(4)
+
+  Describe: Entry.prototype.getVowelCount()
+  Test: 'It will return the number of vowels contained within an entry'
+  Expect: story.getVowelCount().toEqual(7)
+
+  Describe: Entry.prototype.getConsCount()
+  Test: 'It will return the number of consonants within an entry'
+  Expect: story.getConsCount().toEqual(8)
+```
 
 * * *
 
