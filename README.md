@@ -38,6 +38,13 @@ This is an app to take two inputs from a user and stores them in an object using
   Describe: Entry.prototype.getConsCount()
   Test: 'It will return the number of consonants within an entry'
   Expect: story.getConsCount().toEqual(8)
+
+  Describe: Entry.prototype.getTeaser()
+  Test: 'It will return the first sentence of the body of an entry'
+  Expect: story.getTeaser().toEqual('One day the dog ran...')
+
+  Test: 'It will return only the first 8 words of the first sentence if the sentence is longer than 8 words'
+  Expect: longerStory.getTeaser().toEqual('One day the dog ran all the way')
 ```
 
 * * *

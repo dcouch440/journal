@@ -6,6 +6,8 @@ Create a journaling website where a user can write entries including at least a 
 
 Will Need: 
 -title
+-body
+-method - 
 
 Two inputs (title input, body of text input)
 
