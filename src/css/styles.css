@@ -64,6 +64,7 @@ textarea {
   border: var(--black-border);
   font-family: var(--textArea-font);
   font-size: 20px;
+  resize: none;
 }
 #button-container {
   display: flex;
