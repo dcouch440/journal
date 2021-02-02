@@ -1,6 +1,6 @@
 import {Entry} from './Entry.js';
 import '../css/styles.css';
-import $ from "jquery";
+
 
 const storyValues = (thisArg, currentCase) => {
   const caseObj = {
@@ -13,17 +13,18 @@ const storyValues = (thisArg, currentCase) => {
   return (caseObj[currentCase] || caseObj['default'])();
 };
 
-$(document).ready(function() {
+
+document.addEventListener('DOMContentLoaded', () => {
   const buttonContainer = document.getElementById('button-container');
   const output = document.getElementById('output');
   
   buttonContainer.addEventListener('click', (event) => {
     event.preventDefault();
+    console.log(event.target.id);
     const title = document.getElementById('title').value;
     const story = document.getElementById('story-input').value;
     const entry = new Entry(title, story);
     const eventTarget = event.target.id;
     output.innerHTML = storyValues(entry, eventTarget);
-
   });
 });

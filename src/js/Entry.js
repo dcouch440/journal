@@ -33,5 +33,5 @@ Entry.prototype.getTeaser = function() {
   for (let i=0; i < teaseArray.length; i++) {
     i <= 7 && newArray.push(teaseArray[i]);
   }
-  return teaseArray.join(' ');
+  return newArray.join(' ');
 };
