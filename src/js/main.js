@@ -1,4 +1,4 @@
-import {Entry} from './Entry.js'
+import {Entry} from './Entry.js';
 import '../css/styles.css';
 import $ from "jquery";
 
@@ -11,7 +11,7 @@ const storyValues = (thisArg, currentCase) => {
     'default' : () => null
   };
   return (caseObj[currentCase] || caseObj['default'])();
-}
+};
 
 $(document).ready(function() {
   const buttonContainer = document.getElementById('button-container');
